@@ -11,6 +11,7 @@ matplotlib = "*"
 [dev-packages]
 pylint = "*"
 black = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.9"
