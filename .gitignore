@@ -1,4 +1,5 @@
 .idea/
+.data/
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,pycharm
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm
@@ -9,7 +10,7 @@
 
 # User-specific stuff
 .idea/**/workspace.xml
-.idea/**/tasks.xml
+.idea/**/tasks.xmlg
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf

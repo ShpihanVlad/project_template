@@ -12,7 +12,7 @@ def write_to_console(data):
     :param data: data to print. For informative output should support __str__ or __repr__ methods.
     :return: None
     """
-    pass
+    print(data)
 
 
 def write_to_file(filename, data, mode="w", encoding="utf-8"):
@@ -24,10 +24,11 @@ def write_to_file(filename, data, mode="w", encoding="utf-8"):
     :param encoding: encoding of the file. Default is utf-8.
     :return: None
     """
-    pass
+    with open(filename, mode, encoding=encoding) as file:
+        file.write(data)
 
 
-def write_csv(filename, data: pd.DataFrame, **kwargs):
+def write_csv(filename, data: pd.DataFrame, **kwargs) -> Optional[str]:
     """
     Function for writing data to csv file using pandas. Overwrites csv file if exists by default.
     :param filename: a path to the csv file. If None, returns a string, as in pandas specification.
@@ -35,4 +36,4 @@ def write_csv(filename, data: pd.DataFrame, **kwargs):
     :param kwargs: arguments for pandas.to_csv function
     :return: CSV string if filename is None, None otherwise
     """
-    pass
+    return data.to_csv(filename, **kwargs)
