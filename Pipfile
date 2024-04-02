@@ -7,6 +7,8 @@ name = "pypi"
 numpy = "*"
 pandas = "==2.2.0"
 matplotlib = "*"
+jupyterlab = "*"
+black = {extras = ["jupyter"], version = "*"}
 
 [dev-packages]
 pylint = "*"
